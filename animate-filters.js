@@ -30,7 +30,7 @@ $(document).ready(function() {
 
         return {'list': p_values, '_index': filter_index}
       }).then(driver => {
-        $('#resultBox').text(driver.list[driver._index])
+        //$('#resultBox').text(driver.list[driver._index])
 
         setInterval( () => {
           driver._index += 1 //next index
