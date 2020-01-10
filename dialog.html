@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="./css/dialog.css" >
+    </head>
+    <body>
+            <div class="container">
+                <div class="page-header">
+                    <h1>Tableau Extension / <small> Settings</small></h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <span class="dropdown-label">Worksheet with the Filter</span>
+                        <select id="selectWorksheet" class="select">
+                            <option disabled selected="selected">-- Loading --</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <span class="dropdown-label">Filter Field Name</span>
+                        <select id="filterName" class="select">
+                            <option disabled selected="selected">-- Loading --</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <span class="dropdown-label">Parameter with values</span>
+                        <select id="parameterName" class="select">
+                            <option disabled selected="selected">-- Loading --</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-6">
+                        <label for="timeInterval">Time for animation</label>
+                        <input id="timeInterval" type="number" value="" min="1" step="5"/>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <span id="error"></span>
+                    <button id="save" class="btn btn-success">Save</button>
+                    <button id="cancel" class="btn btn-danger">Cancel</button>
+                </div>
+
+            </div>
+        </body>
+        <!-- Tableau Extensions API Library  -->
+        <!-- library is in the /lib directory -->
+        <script src="../../lib/tableau.extensions.1.latest.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+        
+        <!-- Your JavaScript code that uses the Extensions API goes here -->
+        <script src="./dialog.js"></script>
+
+        </html>
+</html>
