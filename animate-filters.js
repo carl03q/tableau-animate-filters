@@ -63,7 +63,7 @@ $(document).ready(function() {
     const popupUrl=`${window.location.origin}/tableau-animate-filters/dialog.html`;
     let defaultPayload="";
     tableau.extensions.ui.displayDialogAsync(popupUrl, defaultPayload, { height:350, width:500 }).then((closePayload) => {
-      console.log('hi')
+      location.reload();
     }).catch((error) => {
       switch (error.errorCode) {
         case tableau.ErrorCodes.DialogClosedByUser:
